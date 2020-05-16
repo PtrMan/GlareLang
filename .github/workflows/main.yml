@@ -20,9 +20,8 @@ jobs:
       with:
         haxe-version: 4.0.5
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Run Compiler.Parser tests
+      run: haxe --run GlarespeakC glareTestCompiler/*.glare
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
