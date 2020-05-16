@@ -23,8 +23,5 @@ jobs:
     - name: Run Compiler.Parser tests
       run: for i in glareTestCompiler/*.glare; do echo "COMPILE $i"; haxe --run GlarespeakC $i; done
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    - name: Run Runtime tests
+      run: haxe --run TESTGlareRuntime
